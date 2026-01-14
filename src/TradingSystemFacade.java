@@ -14,10 +14,14 @@ public class TradingSystemFacade {
     }
 
     private void initializeMarket() {
-        market.addTradable(TradableFactory.createTradable("stock", "AAPL", "Apple Inc.", 150.0), 1000);
-        market.addTradable(TradableFactory.createTradable("stock", "GOOGL", "Alphabet Inc.", 2800.0), 500);
+        market.addTradable(TradableFactory.createTradable("stock", "INTC", "Intel", 48.0), 4000);
+        market.addTradable(TradableFactory.createTradable("stock", "NVO", "Novo Nordisk", 58.0), 2000);
+        market.addTradable(TradableFactory.createTradable("stock", "CVX", "Chevron", 164.0), 10000);
+        market.addTradable(TradableFactory.createTradable("stock", "NFLX", "Netflix",  2800.0), 6000);
+        market.addTradable(TradableFactory.createTradable("crypto", "DOGE", "DogeCoin", 0.20), 100000);
+        market.addTradable(TradableFactory.createTradable("crypto", "SOL", "Solana", 800.0), 1000);
         market.addTradable(TradableFactory.createTradable("crypto", "BTC", "Bitcoin", 45000.0), 100);
-        market.addTradable(TradableFactory.createTradable("crypto", "ETH", "Ethereum", 3000.0), 200);
+        market.addTradable(TradableFactory.createTradable("crypto", "TRUMP", "OFFICIAL TRUMP", 7.12), 20000);
     }
 
     public void registerUser(String username, String password) {
